@@ -1,7 +1,7 @@
 # Contributing to the Cardano Community Media Archive
 
 Thank you for your interest in contributing!  
-This archive exists to preserve and share all design, media, and production 
+This archive exists to preserve and share design, media, and production 
 assets created for Cardano events worldwide.
 
 To keep the archive structured, easy to navigate, and consistent, please follow 
@@ -24,7 +24,7 @@ Instead, you may contribute:
 ### ✔ Metadata & Index Files
 Under each event folder:
 ```
-cardano-summit///
+cardano-summit/<year>/<city-country>/
 ```
 you may add:
 - `index/` metadata files  
@@ -36,11 +36,13 @@ Small thumbnails (<500 KB) may be added to:
 ```
 previews/
 ```
+
 ### ✔ Credits
 If you contributed assets, add your name in:
 ```
 credits.md
 ```
+
 ### ✔ Fixes & Maintenance
 - Broken external links  
 - Missing information  
@@ -53,22 +55,25 @@ credits.md
 ## 🧭 2. Folder Structure Rules
 
 All event assets must follow this structure:
+
 ```
 cardano-summit/
-/
-/
-README.md
-links.md
-credits.md
-previews/
-index/
+  <year>/
+    <city-country>/
+      README.md
+      links.md
+      credits.md
+      previews/
+      index/
 ```
+
 Examples:
 ```
 cardano-summit/2023/vietnam-ho-chi-minh/
 cardano-summit/2023/bali-indonesia/
 cardano-summit/2024/manila-philippines/
 ```
+
 Please do **not** create additional nested folders unless you are adding:
 
 - `index/` → metadata  
@@ -79,64 +84,56 @@ Please do **not** create additional nested folders unless you are adding:
 
 ## 📝 3. File Naming Conventions
 
-To keep files searchable and organized, use this naming format:
+Use:
+
 ```
-----v.
+<year>-<city>-<category>-<asset-name>-v<version>.<format>
 ```
+
 Examples:
 ```
 2023-hcmc-social-frame-main-v1.psd
 2023-bali-stage-loop-01-v2.mp4
 2024-manila-logo-pack-v1.zip
 ```
-Naming keeps global contributions consistent.
 
 ---
 
 ## 📦 4. Adding Download Links
 
-All file downloads must be placed in:
-```
-links.md
-```
-Use this format:
+Place all links inside `links.md`:
+
 ```
 ## Asset Pack Name
 - Type: (Graphics / Motion / Export / etc.)
-- Download: 
+- Download: <URL>
 - Notes: (optional)
 ```
-Links must point to **long-term public hosting** (Archive.org preferred).
 
 ---
 
 ## 🖼 5. Adding Previews
 
-Save thumbnails inside:
+Add thumbnails to:
+
 ```
 previews/
 ```
-Rules:
-- File size under ~500 KB  
-- Only thumbnails (not full images)  
-- Use clear names:
+
+Use filenames like:
+
 ```
 keyvisual-thumb.jpg
 socialframe-thumb.png
 ```
+
 ---
 
 ## 🗂 6. Metadata Guidelines
 
-Metadata files go inside:
+Inside `index/`:
 
 ```
-index\
-```
-
-Format:
-
-```md
 # Asset Pack Name
 
 - **Category:** Graphics / Motion / etc.
@@ -148,4 +145,29 @@ Format:
 - **Credits:** Name(s)
 ```
 
-```
+---
+
+## 🧑‍⚖️ 7. License Rules
+
+Everything follows **CC BY-SA 4.0**.  
+You must credit creators and release derivatives under same license.
+
+Do NOT upload copyrighted materials you cannot legally share.
+
+---
+
+## ⚠️ 8. Prohibited Actions
+
+Do NOT:
+- Upload raw multi-GB files (links only)
+- Upload unauthorized copyrighted content
+- Add unrelated assets
+- Change licenses
+- Break folder structure
+
+---
+
+## 💬 9. Need Help?
+
+Open an Issue with your question.  
+Thanks for preserving Cardano’s creative history!
