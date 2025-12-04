@@ -1,211 +1,151 @@
 # Contributing to the Cardano Community Media Archive
 
 Thank you for your interest in contributing!  
-This project aims to preserve and share all multimedia, design, and video
-production assets created for Cardano community events.
+This archive exists to preserve and share all design, media, and production 
+assets created for Cardano events worldwide.
 
-Because this archive contains **large files**, **multiple event sources**, and
-**external storage links**, we follow specific contribution rules to maintain
-quality, accuracy, and long-term usability.
-
-Please read the guidelines below before submitting contributions.
+To keep the archive structured, easy to navigate, and consistent, please follow 
+the guidelines below before contributing.
 
 ---
 
-## 📌 Types of Contributions We Accept
+## 🧱 1. Contribution Types
 
-You can contribute in many ways:
+You may contribute:
 
-### ✔ 1. Metadata & Documentation
-- Adding missing information about an event
-- Improving asset descriptions or naming
-- Correcting inaccurate info
-- Adding links to external storage mirrors
-- Adding previews or thumbnails to `previews/` folders
-- Updating GitBook documentation pages
+### ✔ Event Assets (Links Only)
+We do not store large files directly in the repository.  
+Instead, you may contribute:
+- Download links (Archive.org / MEGA / IPFS / etc.)
+- Metadata describing the files
+- Preview thumbnails
+- Notes or documentation
 
-### ✔ 2. New Event Media Sets
-If you have permission to share materials from:
-- Cardano Summit events  
-- Constitutional events  
-- Community gatherings  
-- Presentations  
-- Workshops or side-events  
+### ✔ Metadata & Index Files
+Under each event folder:
+```
+cardano-summit///
+```
+you may add:
+- `index/` metadata files  
+- Additional descriptive notes  
+- Missing asset information  
 
-You may submit:
-- Links to large-file storage (Archive.org, MEGA, IPFS, etc.)
-- Metadata files
-- Preview images
-- Folder structures
-- Event summaries
-
-### ✔ 3. Quality Improvements
-- Reorganizing inconsistent folders  
-- Standardizing naming conventions  
-- Adding missing credits  
-- Adding missing license information  
-- Adding mirrored download links  
-
-### ✔ 4. Bug Reports & Issues
-You may report:
-- Broken links  
-- Missing files  
-- Metadata errors  
-- Incorrect event labeling  
-- Problems in GitBook documentation  
-
-Please open an **Issue** for these.
+### ✔ Previews
+Small thumbnails (<500 KB) may be added to:
+```
+previews/
+```
+### ✔ Credits
+If you contributed assets, add your name in:
+```
+credits.md
+```
+### ✔ Fixes & Maintenance
+- Broken external links  
+- Missing information  
+- Folder cleanup  
+- Naming corrections  
+- New mirrors  
 
 ---
 
-## 📁 Repository Structure Guidelines
+## 🧭 2. Folder Structure Rules
 
-The archive uses the following structure:
-
+All event assets must follow this structure:
 ```
-/2022-summit
-/2023-summit
-/2024-summit
-/constitutional-event
-/previews
-/docs
+cardano-summit/
+/
+/
+README.md
+links.md
+credits.md
+previews/
+index/
 ```
-
-Each event folder may contain:
-
-```
-README.md           → Event overview
-metadata.json       → Event-level metadata (optional)
-index/              → Metadata for each asset pack
-previews/           → Small JPEG/PNG preview images
-links.md            → External download URLs
-credits.md          → Creator & team credits
-```
-
-### 📌 Do NOT upload raw multi-GB media directly to GitHub  
-Instead:
-
-1. Upload to **Archive.org**, **MEGA**, **IPFS**, **Dropbox**, etc.  
-2. Add the links in:
-   - `links.md`, **and/or**
-   - Event GitBook page  
-3. Add preview thumbnails (optional but recommended)
-
----
-
-## 📝 Naming Conventions
-
-Please follow these conventions:
-
-### File Naming
-
-event-year_category_item-version.format
-
 Examples:
+```
+cardano-summit/2023/vietnam-ho-chi-minh/
+cardano-summit/2023/bali-indonesia/
+cardano-summit/2024/manila-philippines/
+```
+Please do **not** create additional nested folders unless you are adding:
 
-```
-2023-summit_stage-graphics_main-v1.psd
-2024-summit_motion-pack_01.aep
-constitutional-event_social-frame_v2.png
-```
-
-### Folder Naming
-Use lowercase, hyphen-separated:
-
-```
-2022-summit
-cardano-constitutional-event
-```
+- `index/` → metadata  
+- `previews/` → thumbnails  
+- `concepts/` → (only if multiple design concepts are needed)
 
 ---
 
-## 🧾 Metadata Standards (Recommended)
+## 📝 3. File Naming Conventions
 
-Each event in `/index/` folder should include a Markdown file like:
-
+To keep files searchable and organized, use this naming format:
 ```
-## Opening Keynote Pack
-Event: Cardano Summit 2023
-Asset Type: Stage Graphics / Motion Graphics / Branding
-Contents: PSD, TIFF, AE Projects
-Resolution: 4K
-Download: Archive.org Link￼
-Preview:
-License: CC BY-SA 4.0
-Credits: Name(s) of designers or teams
+----v.
 ```
+Examples:
+```
+2023-hcmc-social-frame-main-v1.psd
+2023-bali-stage-loop-01-v2.mp4
+2024-manila-logo-pack-v1.zip
+```
+Naming keeps global contributions consistent.
 
 ---
 
-## 🧠 Workflow: How to Contribute
+## 📦 4. Adding Download Links
 
-### Step 1 — Fork the repository
-Click **Fork** on GitHub.
-
-### Step 2 — Create a new branch
-Example:---
-
+All file downloads must be placed in:
 ```
-git checkout -b add-2023-summit-pack1
+links.md
 ```
-
-### Step 3 — Add or edit files
-You may:
-
-- Add metadata under the correct event folder  
-- Add/update preview images  
-- Insert external storage links  
-
-### Step 4 — Commit your changes
-
+Use this format:
 ```
-git commit -m “Add metadata and download links for 2023 Summit Pack 1”
+## Asset Pack Name
+- Type: (Graphics / Motion / Export / etc.)
+- Download: 
+- Notes: (optional)
 ```
-
-### Step 5 — Open a Pull Request (PR)
-Your PR should include:
-
-- What you added  
-- What event it belongs to  
-- Any external download links  
-- Credits if applicable  
+Links must point to **long-term public hosting** (Archive.org preferred).
 
 ---
 
-## 👥 Credits & Attribution
+## 🖼 5. Adding Previews
 
-When adding new materials:
-
-1. Always credit the original designers and creative teams.  
-2. Only upload or link files that **you have permission to share**.  
-3. Respect the **CC BY-SA 4.0 license** used by this archive.
-
-This helps maintain transparency and honors the creators.
-
+Save thumbnails inside:
+```
+previews/
+```
+Rules:
+- File size under ~500 KB  
+- Only thumbnails (not full images)  
+- Use clear names:
+```
+keyvisual-thumb.jpg
+socialframe-thumb.png
+```
 ---
 
-## ⚠️ Important Restrictions
+## 🗂 6. Metadata Guidelines
 
-Please **do not**:
+Metadata files go inside:
 
-❌ Upload copyrighted Cardano Foundation / IOG assets that you are *not* authorized to release  
-❌ Upload files larger than 100MB directly to GitHub  
-❌ Upload raw multi-GB design/video files to the repo  
-❌ Remove creator credits  
-❌ Change the license of existing materials  
-❌ Add non-Cardano-related materials
+```
+index\
+```
 
-This protects the integrity of the archive.
+Format:
 
----
+```md
+# Asset Pack Name
 
-## 💬 Questions or Support?
+- **Category:** Graphics / Motion / etc.
+- **Contents:** PSD, TIFF, AE, PNG exports
+- **Resolution:** 1080p / 4K / etc.
+- **Download:** <URL>
+- **Preview:** ../previews/<image>
+- **License:** CC BY-SA 4.0
+- **Credits:** Name(s)
+```
 
-If you have questions, feel free to:
-
-- Open an **Issue**
-- Start a **Discussion**
-- Contact the maintainers (Email listed in README)
-
-Thank you for contributing to the Cardano Community Media Archive!  
-Your help preserves the creative history of the ecosystem for years to come.
+```
