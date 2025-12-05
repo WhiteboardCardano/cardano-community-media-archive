@@ -1,4 +1,4 @@
-# Cardano Summit 2023 — Vietnam (Ho Chi Minh)
+# Cardano Summit 2023 — Vietnam (Ho Chi Minh, Hanoi)
 
 This folder contains the design materials and media assets used for the  
 **Cardano Summit 2023 – Ho Chi Minh & Ha Noi, Vietnam** community event.
